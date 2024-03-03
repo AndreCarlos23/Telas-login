@@ -16,7 +16,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: #301860;
         }  
+        /*lado esquerdo da página*/
         .lado-esquerdo{
             width: 50%;
             height: 100%;
@@ -24,7 +26,45 @@
             align-items: center;
             justify-content: center;
         }
-
+        /*lado direito da página*/
+        .lado-direito{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tela-login{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            background-color: #483078;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 35px;
+            border-radius: 10px;
+        }
+        .tela-login > h2{
+            color: #fffff7;
+        }
+        .login{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 10px 0px;
+        }
+        .login > label{
+            margin-bottom: 10px;
+            color: #fffff7;
+        }
+        .login > input{
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: #6f57a0;
+        }
     </style>
 </head>
 <body>
@@ -35,14 +75,15 @@
         <div class="lado-direito">
             <div class="tela-login">
                 <h2>Login</h2>
-                <div class="login-email">
+                <div class="login">
                     <label for="Email">Email</label>
                     <input type="text" name="Email" placeholder="Email">
                 </div>
-                <div class="login-senha">
+                <div class="login">
                     <label for="Senha">Email</label>
                     <input type="password" name="Senha" placeholder="Senha">
                 </div>
+                <button class="btn">Login</button>
             </div>
         </div>
     </div>
