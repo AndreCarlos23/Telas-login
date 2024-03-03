@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login Nº 1</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         *{
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
         }
         .principal{
+            font-family: "Noto Sans", sans-serif;
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -23,8 +25,12 @@
             width: 50%;
             height: 100%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+        .lado-esquerdo > h1{
+            color: #aee239;
         }
         /*lado direito da página*/
         .lado-direito{
@@ -64,6 +70,22 @@
             width: 100%;
             border-radius: 10px;
             background-color: #6f57a0;
+            outline:none;
+            border: none;
+        }
+        .login > input::placeholder{
+            color: white;
+        }
+        .btn{
+            width: 100%;
+            padding: 16px 0px;
+            border-radius: 10px;
+            cursor:pointer;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 800;
+            background-color:#aee239;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -71,6 +93,7 @@
     <div class="principal">
         <div class="lado-esquerdo">
             <h1>Faca login<br>E faca parte do nosso time</h1>
+            <img src="Astronaut-ss.png" alt="">
         </div>
         <div class="lado-direito">
             <div class="tela-login">
